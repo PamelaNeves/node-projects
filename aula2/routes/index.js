@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
     if (err) 
       res.render('index', { title: 'ERRO', clientes: [] });
     else
-      res.render('index', { title: 'Express', clientes: docs });
+      res.render('index', { title: 'Lista de Clientes', clientes: docs });
   });
 });
 
