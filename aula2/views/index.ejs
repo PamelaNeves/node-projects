@@ -7,11 +7,21 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-    <ul><% clientes.forEach(function(item) { %>
-        <li>
-          <%= item.nome %><%= item.idade %>
-        </li>
+    <table border="1">
+      <tr>
+        <td>Nome</td>
+        <td>Idade</td>
+        <td>Cidade</td>
+        <td>UF</td>
+      </tr>
+      <% clientes.forEach(function(item) { %>
+      <tr>
+        <td><%= item.nome %></td>
+        <td><%= item.idade %></td>
+        <td><%= item.cidade %></td>
+        <td><%= item.uf %></td>
+      </tr>
       <% })  %>
-    </ul>
+    </table>
   </body>
 </html>
