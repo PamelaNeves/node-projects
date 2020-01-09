@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <table border="1">
+      <tr>
+        <td>Titulo</td>
+        <td>Genero</td>
+        <td>Numero de Paginas</td>
+        <td>Preco</td>
+      </tr>
+      <% for (var i=0; i< livros.length; i++){ %>
+        <tr>
+          <td><%= livros[i].titulo %></td>
+          <td><%= livros[i].genero %></td>
+          <td><%= livros[i].numeroPaginas %></td>
+          <td><%= livros[i].preco %></td>
+        </tr>
+        <% } %>
+
+    </table>
+    <a href="/cadastro">Cadatrar Novo</a>
+
+  </body>
+</html>

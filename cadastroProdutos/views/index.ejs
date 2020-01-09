@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <table border="1">
+      <tr>
+        <td>Nome</td>
+        <td>Categoria</td>
+        <td>Preco</td>
+      </tr>
+      <% for (var i=0; i< produtos.length; i++){ %>
+        <tr>
+          <td><%= produtos[i].nome %></td>
+          <td><%= produtos[i].categoria %></td>
+          <td><%= produtos[i].preco %></td>
+        </tr>
+        <% } %>
+    </table>
+    <a href="/cadastro">Cadatrar Novo</a>
+  </body>
+</html>

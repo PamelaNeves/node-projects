@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <h1>Cadastro de Livros</h1>
+        <form action="/cadastro" method="POST">
+        <p>
+            Titulo: <input type="text" name ="titulo" value = "">
+        </p>
+
+            <p>
+                Genero: <select name="genero" >
+                    <option value="Romance">Romance</option>
+                    <option value="Suspense">Suspense</option>
+                    <option value="Ficcao">Ficcao</option>
+                    <option value="Infantil">Infantil</option>
+                </select>            
+        </p>
+            <p>
+                Numero de Paginas: <input type="number" name = "numeroPaginas" value = 100>
+            </p>
+            <p>
+                Preco: <input type="number" name = "preco"value=20.00>
+            </p>
+            <p>
+                <input type="submit" value = "Salvar">
+
+            </p>
+    
+        </form>
+    </body>
+</html>
