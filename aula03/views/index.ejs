@@ -10,18 +10,14 @@
     <table>
       <tr style="background-color: gray;">
         <td>Nome</td><td>Idade</td><td>Acoes</td>
-      <%
-        clientes.forEach(function(item)
-      %>
-      <tr>
-        <td><% item.nome%></td>
-        <td><% item.idade%></td>
-        <td></td>
       </tr>
       <%
-      })
+        clientes.forEach(function(item){
+          %>
+          <tr><td><% item.nome%></td><td><% item.idade%></td><td></td></tr>
+          <%
+        })
       %>
-      </tr
-    </table>
+      </table>
   </body>
 </html>
