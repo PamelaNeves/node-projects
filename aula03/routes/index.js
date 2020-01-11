@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   var db = require("../models/db");
   db.findClientes(function(err,docs){
     if(err)return console.log(err);
-    res.render('index', { title: 'Clientes', clientes: docs });
+    res.render('index', { title: 'clientes', clientes: docs });
 
   })
 });
