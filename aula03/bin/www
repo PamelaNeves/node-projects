@@ -3,11 +3,10 @@
 /**
  * Module dependencies.
  */
-
+var db = require("../models/db");
 var app = require('../app');
 var debug = require('debug')('aula03:server');
 var http = require('http');
-var db = require("../models/db");
 
 
 /**
