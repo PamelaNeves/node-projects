@@ -2,7 +2,7 @@ var mongoClient = require("mongodb").MongoClient;
 var objectId = require("mongodb").ObjectId;
 
 function conectar(callback){
-    mongoClient.connect('mongodb://localhost:27017/aula04', function(err, conn){
+    mongoClient.connect('mongodb://localhost:27017', function(err, conn){
         if(err) return console.log(err);
     
         global.conn = conn.db("aula04");
