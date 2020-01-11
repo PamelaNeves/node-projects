@@ -27,7 +27,7 @@ var server = http.createServer(app);
  */
 
 db.conectar(function(){
-server.listen(port);
+  server.listen(port);
 })
 
 server.on('error', onError);
