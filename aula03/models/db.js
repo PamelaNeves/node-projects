@@ -10,7 +10,7 @@ function conectar(callback){
     })
 }
 function findClientes(callback){
-    global.conn.collection("clientes").find();
+    global.conn.collection("clientes").find().toArray(callback);
 
 }
 
