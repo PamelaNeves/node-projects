@@ -9,21 +9,24 @@ function conectar(callback){
         callback();
     })
 }
+function findCliente(id, callback){
+    global.conn.collection("clientes").findOne({_id: objectId(id)}, callback)
+}
+
 function findClientes(callback){
-    global.conn.collection("clientes").find().toArray(callback);
-
+    global.conn.collection("clientes").find().toArray(callback)
 }
 
-function insertClientes(cliente, callback){
+function insertCliente(cliente, callback){
     global.conn.collection("clientes").insert(cliente, callback);
-    
 }
 
-function updateClientes(cliente, callback){
-    global.conn.collection("clientes").update({_id: objectId(cliente._id)}.cliente, callback);
+function updateCliente(id, cliente, callback){
+    global.conn.collection("clientes").update({_id: objectId(id) }, cliente, callback);
 }
 
-function deleteClientes(id, callback){
-    global.conn.collection("clientes").remove({_id: objectId(id)})
+function deleteCliente(id, callback){
+    global.conn.collection("clientes").remove({_id: objectId(id) }, callback);
 }
-module.exports = {conectar, findClientes, insertClientes, updateClientes, deleteClientes}
+
+module.exports = { conectar, findCliente, findClientes, insertCliente, updateCliente, deleteCliente }
