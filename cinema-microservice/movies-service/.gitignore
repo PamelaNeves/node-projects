@@ -7,6 +7,7 @@ yarn-error.log*
 *.wt
 *.lock
 *.bson
+data/*
 # Runtime data
 pids
 *.pid
