@@ -1,5 +1,5 @@
 //index.js
-require("dotenv-safe").config({example: './src/.env.example'});
+require("dotenv-safe").config({example: './src/.env'});
 const movies = require('./api/movies');
 const server = require("./server/server");
 const repository = require("./repository/repository");
