@@ -30,4 +30,4 @@ const movieSchema = joi.object({
                     .required()
 });
 
-module.exports = { movieSchema }
+module.exports = {movieSchema}
