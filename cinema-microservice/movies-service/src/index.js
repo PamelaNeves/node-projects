@@ -1,4 +1,4 @@
-require("dotenv-safe").config({example: './src/.env'});
+require("dotenv-safe").load({example: './src/.env.example'});
 const movies = require('./api/movies');
 const server = require("./server/server");
 const repository = require("./repository/repository");
