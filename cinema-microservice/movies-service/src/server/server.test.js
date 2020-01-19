@@ -22,4 +22,3 @@ function runTests(){
 }
 
 module.exports = { runTests }
-

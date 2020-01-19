@@ -16,7 +16,7 @@ function start(api, repository, callback){
  
     api(app, repository);
     server = app.listen(parseInt(process.env.PORT), () => callback(null, server));
- }
+}
  
  function stop(){
     if(server) server.close();
@@ -24,4 +24,3 @@ function start(api, repository, callback){
 }
    
 module.exports = { start, stop }
-   

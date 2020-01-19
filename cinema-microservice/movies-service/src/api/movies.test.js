@@ -4,6 +4,7 @@ const movies = require('./movies');
 const server = require("../server/server");
 const repository = require("../repository/repository");
 
+
 function runTests(){
     
     var app = null;
@@ -67,8 +68,10 @@ function runTests(){
         })
         
         server.stop();
+
     })
 
 }
-
 module.exports = { runTests }
+
+
