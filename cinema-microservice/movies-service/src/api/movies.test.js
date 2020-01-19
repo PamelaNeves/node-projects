@@ -3,8 +3,7 @@ const supertest = require('supertest');
 const movies = require('./movies');
 const server = require("../server/server");
 const repository = require("../repository/repository");
-
-
+console.log("antes");
 function runTests(){
     
     var app = null;
@@ -67,10 +66,11 @@ function runTests(){
                 });
         })
         
-        server.stop();
-
+        
     })
+    console.log("depois");
 
+    server.stop();
 }
 module.exports = { runTests }
 
